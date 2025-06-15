@@ -45,7 +45,7 @@ The goal is to identify patterns and build a predictive model to **anticipate wh
   - OverTime
 - **Encoding:** One-hot encoding was used for categorical variables.
 - **Scaling:** StandardScaler for numerical feature scaling.
--**Tuning** Tuned  the model using Grid search cv and XG boosting.
+- **Tuning:** Tuned  the model using Grid search cv and XG boosting.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## ⚙️ Streamlit Application
