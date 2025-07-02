@@ -69,10 +69,7 @@ To handle this issue, we used oversampling techniques:
 SMOTE (Synthetic Minority Over-sampling Technique)
 Creates synthetic samples for the minority class to balance the dataset.
 
-RandomOverSampler
-Duplicates existing samples of the minority class.
 
-These techniques help the model learn from both classes effectively and improve performance on identifying employees who are likely to leave.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## ⚙️ Streamlit Application
