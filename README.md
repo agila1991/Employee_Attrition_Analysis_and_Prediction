@@ -46,6 +46,33 @@ The goal is to identify patterns and build a predictive model to **anticipate wh
 - **Encoding:** One-hot encoding was used for categorical variables.
 - **Scaling:** StandardScaler for numerical feature scaling.
 - **Tuning:** Tuned  the model using Grid search cv and XG boosting.
+
+⚠️ Dataset Limitation – Class Imbalance
+🎯 Problem
+One of the major challenges in this project is the severe class imbalance in the target variable Attrition. The dataset contains far more instances of employees who did not leave (Attrition = No) compared to those who did leave (Attrition = Yes).
+
+Typical distribution:
+
+Attrition = No  → 84%
+Attrition = Yes → 16%
+This imbalance can lead to:
+
+❌ Misleading high accuracy (predicting "No" for all gets 84% accuracy)
+
+❌ Poor recall and precision for the minority class
+
+❌ Model bias toward the majority class (non-attrition)
+
+✅ Solution Applied
+To handle this issue, we used oversampling techniques:
+
+SMOTE (Synthetic Minority Over-sampling Technique)
+Creates synthetic samples for the minority class to balance the dataset.
+
+RandomOverSampler
+Duplicates existing samples of the minority class.
+
+These techniques help the model learn from both classes effectively and improve performance on identifying employees who are likely to leave.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## ⚙️ Streamlit Application
